@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -9,8 +8,12 @@ export default function Home() {
             <title>prema</title>
             <link rel="icon" href="/favicon.ico" />
 	</Head>
-	<div className={styles.hero}>
-	    <div>Hello</div>
+	<div className="hero is-fullheight">
+	    <div className="hero-body">
+		<div className="container has-text-centered">
+		    Hello
+		</div>
+	    </div>
 	</div>
     </div>
   )
