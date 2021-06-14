@@ -8,13 +8,15 @@ export default function Home() {
             <title>prema</title>
             <link rel="icon" href="/favicon.ico" />
 	</Head>
-	<div className="hero is-fullheight">
+	<div className="hero is-fullheight is-primary">
 	    <div className="hero-body">
 		<div className="container has-text-centered">
-		    Hello
-		</div>
+		    <h1 className="title is-spaced" style={{fontSize: "4rem"}}>prema</h1>
+		    <h2 className="subtitle">
+			<strong>Välkommen!</strong> Det finns inget här än, men vänta bara, det kommer bli grymt!</h2>
 	    </div>
 	</div>
+    </div>
     </div>
   )
 }
