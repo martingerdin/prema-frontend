@@ -9,9 +9,16 @@ export default function Home() {
         <title>prema</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="hero is-fullheight is-primary">
+      <div className="hero is-fullheight is-dark">
         <div className="hero-body">
           <div className="container has-text-centered">
+            <figure className="image">
+              <Image
+                src="/twemoji-13.1.0-syringe-1f489.svg"
+                height={150}
+                width={150}
+              />
+            </figure>
             <Logo />
             <h2 className="subtitle">
               <strong>Välkommen!</strong> Det finns inget här än, men vänta
