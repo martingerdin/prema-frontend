@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Logo } from "../components/Logo";
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 import { ThemeContext } from "../components/ThemeContext";
 
 export default function Home() {
@@ -36,6 +37,9 @@ export default function Home() {
                 bara, det kommer bli grymt!
               </h2>
             </div>
+          </div>
+          <div className="hero-foot">
+            <Footer />
           </div>
         </section>
       </ThemeContext.Provider>
