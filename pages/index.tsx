@@ -9,7 +9,7 @@ export default function Home() {
         <title>prema</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="hero is-fullheight is-dark">
+      <div className="hero is-fullheight is-light">
         <div className="hero-body">
           <div className="container has-text-centered">
             <figure className="image">
