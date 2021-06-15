@@ -24,15 +24,19 @@ function ThemeButton() {
 }
 
 export function Navbar() {
+  const [burgerActive, setBurgerActive] = useState(false);
+
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
+        {/* Navbar burger has to appear as last child of navbar-brand, logo can go before this*/}
         <a
           role="button"
-          className="navbar-burger"
+          className={`navbar-burger ${burgerActive && "is-active"}`}
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
+          data-target="navbarMenu"
+          onClick={() => setBurgerActive(!burgerActive)}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -40,7 +44,10 @@ export function Navbar() {
         </a>
       </div>
 
-      <div id="navbarMenu" className="navbar-menu">
+      <div
+        id="navbarMenu"
+        className={`navbar-menu ${burgerActive && "is-active"}`}
+      >
         <div className="navbar-end">
           <div className="navbar-item">
             <ThemeButton />
